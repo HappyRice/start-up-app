@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import {StartUp} from "./components/StartUp";
 import Webpages from "./Webpages";
 
 function App() {

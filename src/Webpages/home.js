@@ -4,8 +4,9 @@ const Home = () => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [users, setUsers] = useState([]);
+
     useEffect(() => {
-        fetch("http://localhost:9080/test/users")
+        fetch(process.env.REACT_APP_API_BASE_PATH + '/startup/users')
             .then(res => res.json())
             .then(
                 (data) => {

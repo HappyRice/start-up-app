@@ -8,7 +8,7 @@ const User = () => {
     const [user, setUser] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:9080/test/users/" + id)
+        fetch(process.env.REACT_APP_API_BASE_PATH + '/startup/users/' + id)
             .then(res => res.json())
             .then(
                 (data) => {
